@@ -8,6 +8,9 @@ The final ensemble model predicts ESG scores with an impressive accuracy, deviat
 They aim to incorporate features that make ESG performance transparent and actionable, providing not just scores but also insights into areas for improvement or validation.
 ### Possible Suggestions
 1. Adapt it for other languages
+    1. French
+    2. Danish
+    3. Japanese
 2. include forecasting
 3. include whether the result meets the regulations
     1. EU, UN, other regional/company guidelines
