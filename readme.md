@@ -1,1 +1,1 @@
-# This is my reame file for my project. welcome to my project
+# This is my readme file for my project. Welcome to my project
