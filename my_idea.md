@@ -16,4 +16,6 @@ They aim to incorporate features that make ESG performance transparent and actio
     1. For furhter annual reports
 3. include whether the result meets the regulations
     1. EU, UN, other regional/company guidelines
-    2. Legal Guidlines   
+    2. Legal Guidlines
+    3. other municipality changes
+   
