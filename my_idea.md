@@ -11,6 +11,7 @@ They aim to incorporate features that make ESG performance transparent and actio
     1. French
     2. Danish
     3. Japanese
+    4. Others
 2. include forecasting
     1. For furhter annual reports
 3. include whether the result meets the regulations
