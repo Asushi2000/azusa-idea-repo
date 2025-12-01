@@ -1,0 +1,35 @@
+h1 {
+      font-family: Arial, sans-serif;
+      margin: 100;
+      padding: 100px;
+      color: rgb(133, 49, 32);
+}
+
+.first-title{
+    background: rgb(119, 198, 254);
+    text-align: center;
+}
+
+.bigger-font-size {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.smaller-padding {
+    padding: 50px;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  background: rgb(244, 240, 183);
+  padding: 30px;
+}
+
+div{
+    font-size: 17px
+}
+
+
+
