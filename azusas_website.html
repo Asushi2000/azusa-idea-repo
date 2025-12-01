@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <h1 class="first-title bigger-font-size">
+        Welcome to My Website
+    </h1>
+    <h1 class="first-title smaller-padding">
+        Introduction
+    </h1>
+    <main>
+        <div id="azusa-yamazaki">
+            <p>
+                <b>What is my name?</b>
+                <br>
+                Azusa Yamazaki
+                <br>
+                <button
+                onclick="loadMarkdown('assignment_1.md', 'azusa-yamazaki')"
+                >
+                assignment_1
+                </button>
+            </p>
+        </div>
+        <div id="japan">
+            <p>
+                <b>Where am I from?</b>
+                <br>
+                I am from Japan, currently studying abroad in Denmark
+                <br>
+                <button
+                onclick="loadMarkdown('example2.md', 'japan'); getAdvice('japan')"
+                >
+                Open for daily quote
+                </button>
+            </p>
+        </div>
+        <div id="masters">
+            <p>
+                <b>What do I study?</b>
+                <br>
+                I am doing my master's in <a href="https://www.au.dk/">Aarhus University</a>
+                <br>
+                <button
+                onclick="getRandom('masters');"
+                >
+                Open Page 3
+                </button>
+            </p>
+        </div>
+        <div class="matcha">
+            <p>
+                <b>What am I into?</b>
+                <br>
+                I studied tea ceremony for 6 years which makes me hyped about the match boom in Europe
+            </p>
+        </div>
+        <img src="https://info.ehl.edu/hubfs/Blog-EHL-Insights/Images-EHL-Insights/EHL-Passugg_Blog_Matcha_Header.jpg" alt="matcha" width="500" height="300">
+    </main>
+</body>
+<footer>
+    <p>© 2025 Azusa Yamazaki — All rights reserved</p>
+</footer>  
+<script>
+async function loadMarkdown(assignment_1, componentId) {
+  const response = await fetch(assignment_1);
+  const text = await response.text();
+  document.getElementById(componentId).innerHTML = marked.parse(text);
+}
+
+async function getAdvice(componentId){
+  const response = await fetch('https://api.adviceslip.com/advice');
+  const data = await response.json();
+  document.getElementById(componentId).innerHTML = data.slip.advice;
+}
+async function getRandom(componentId){
+  const response = await fetch('https://dog.ceo/api/breeds/image/random');
+  const data = await response.json();
+  document.getElementById(componentId).innerHTML = `<img src="${data.message}" alt="Random Dog">`;
+}
+
+</script> 
+</html>
